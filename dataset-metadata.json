@@ -1,0 +1,335 @@
+{
+  "subtitle": "Explore Open Data from the Centers for Disease Control", 
+  "description": "### Content  \n\nMore details about each file are in the individual file descriptions.  \n\n### Context  \n\nThis is a dataset hosted by the Centers for Disease Control and Prevention. The organization has an open data platform found [here](https://data.cdc.gov) and they update their information according the amount of data that is brought in. Explore CDC Data using Kaggle and all of the data sources available through the CDC [organization page](https://www.kaggle.com/cdc)!  \n\n* Update Frequency: This dataset is updated daily.\n\n### Acknowledgements\n\nThis dataset is maintained using Socrata's API and Kaggle's API. [Socrata](https://socrata.com/) has assisted countless organizations with hosting their open data and has been an integral part of the process of bringing more data to the public.  \n\nThis dataset is distributed under the following licenses: Public Domain U.S. Government, Public Domain", 
+  "title": "NCHS - Drug Poisoning Mortality", 
+  "id_no": 52293, 
+  "keywords": [
+    "socrata", 
+    "united states", 
+    "mortality", 
+    "small"
+  ], 
+  "id": "cdc/nchs-drug-poisoning-mortality", 
+  "resources": [
+    {
+      "path": "./nchs-drug-poisoning-mortality-by-county-united-states.csv", 
+      "description": "### Content  \n\nThis dataset contains model-based county estimates for drug-poisoning mortality. \r\n\r\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD\u201310). Drug-poisoning deaths are defined as having ICD\u201310 underlying cause-of-death codes X40\u2013X44 (unintentional), X60\u2013X64 (suicide), X85 (homicide), or Y10\u2013Y14 (undetermined intent).\r\n\r\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011\u20132016 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\r\n\r\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD\u201310 codes for unintentional poisoning as R99, \u201cOther ill-defined and unspecified causes of mortality\u201d (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Drug poisoning death rates may be underestimated in those instances.\r\n\r\nSmoothed county age-adjusted death rates (deaths per 100,000 population) were obtained according to methods described elsewhere (3\u20135). Briefly, two-stage hierarchical models were used to generate empirical Bayes estimates of county age-adjusted death rates due to drug poisoning for each year. These annual county-level estimates \u201cborrow strength\u201d across counties to generate stable estimates of death rates where data are sparse due to small population size (3,5). Estimates for 1999-2015 have been updated, and may differ slightly from previously published estimates. Differences are expected to be minimal, and may result from different county boundaries used in this release (see below) and from the inclusion of an additional year of data. Previously published estimates can be found here for comparison.(6) Estimates are unavailable for Broomfield County, Colorado, and Denali County, Alaska, before 2003 (7,8). Additionally, Clifton Forge County, Virginia only appears on the mortality files prior to 2003, while Bedford City, Virginia was added to Bedford County in 2015 and no longer appears in the mortality file in 2015. These counties were therefore merged with adjacent counties where necessary to create a consistent set of geographic units across the time period. County boundaries are largely consistent with the vintage 2005-2007 bridged-race population file geographies, with the modifications noted previously (7,8).\r\n\r\nREFERENCES\r\n1. National Center for Health Statistics. National Vital Statistics System: Mortality data. Available from: http://www.cdc.gov/nchs/deaths.htm.\r\n\r\n2. CDC. CDC Wonder: Underlying cause of death 1999\u20132016. Available from: http://wonder.cdc.gov/wonder/help/ucd.html.\r\n\r\n3. Rossen LM, Khan D, Warner M. Trends and geographic patterns in drug-poisoning death rates in the U.S., 1999\u20132009. Am J Prev Med 45(6):e19\u201325. 2013.\r\n\r\n4. Rossen LM, Khan D, Warner M. Hot spots in mortality from drug poisoning in the United States, 2007\u20132009. Health Place 26:14\u201320. 2014.\r\n\r\n5. Rossen LM, Khan D, Hamilton B, Warner M. Spatiotemporal variation in selected health outcomes from the National Vital Statistics System. Presented at: 2015 National Conference on Health Statistics, August 25, 2015, Bethesda, MD. Available from: http://www.cdc.gov/nchs/ppt/nchs2015/Rossen_Tuesday_WhiteOak_BB3.pdf.\r\n\r\n6. Rossen LM, Bastian B, Warner M, and Khan D. NCHS \u2013 Drug Poisoning Mortality by County: United States, 1999-2015. Available from: https://data.cdc.gov/NCHS/NCHS-Drug-Poisoning-Mortality-by-County-United-Sta/pbkm-d27e.\r\n\r\n7. National Center for Health Statistics. County geography changes: 1990\u20132012. Available from: http://www.cdc.gov/nchs/data/nvss/bridged_race/County_Geography_Changes.pdf.\r\n\r\n8. National Center for Health Statistics. County geography changes: 1990\u20132015. Available from:  https://www.cdc.gov/nchs/nvss/bridged_race/county_geography-_changes2015.pdf.  \n\n", 
+      "schema": {
+        "fields": [
+          {
+            "type": "Numeric", 
+            "name": "FIPS", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Year", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "State", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "FIPS State", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "County", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Population", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Estimated Age-adjusted Death Rate, 16 Categories (in ranges)", 
+            "title": null
+          }
+        ]
+      }
+    }, 
+    {
+      "path": "./nchs-drug-poisoning-mortality-by-county-united-states_1csv", 
+      "description": "### Content  \n\nThis dataset describes drug poisoning deaths at the county level by selected demographic characteristics and includes age-adjusted death rates for drug poisoning from 1999 to 2015.\r\n\r\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD\u201310). Drug-poisoning deaths are defined as having ICD\u201310 underlying cause-of-death codes X40\u2013X44 (unintentional), X60\u2013X64 (suicide), X85 (homicide), or Y10\u2013Y14 (undetermined intent).\r\n\r\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011\u20132015 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\r\n\r\nEstimate does not meet standards of reliability or precision. Death rates are flagged as \u201cUnreliable\u201d in the chart when the rate is calculated with a numerator of 20 or less.\r\n\r\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD\u201310 codes for unintentional poisoning as R99, \u201cOther ill-defined and unspecified causes of mortality\u201d (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Estimates should be interpreted with caution.\r\n\r\nSmoothed county age-adjusted death rates (deaths per 100,000 population) were obtained according to methods described elsewhere (3\u20135). Briefly, two-stage hierarchical models were used to generate empirical Bayes estimates of county age-adjusted death rates due to drug poisoning for each year during 1999\u20132015. These annual county-level estimates \u201cborrow strength\u201d across counties to generate stable estimates of death rates where data are sparse due to small population size (3,5). Estimates are unavailable for Broomfield County, Colo., and Denali County, Alaska, before 2003 (6,7). Additionally, Bedford City, Virginia was added to Bedford County in 2015 and no longer appears in the mortality file in 2015. County boundaries are consistent with the vintage 2005-2007 bridged-race population file geographies (6).  \n\n", 
+      "schema": {
+        "fields": [
+          {
+            "type": "String", 
+            "name": "FIPS", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Year", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "State", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "ST", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "FIPS State", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "County", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Population", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Estimated Age-adjusted Death Rate, 16 Categories (in ranges)", 
+            "title": null
+          }
+        ]
+      }
+    }, 
+    {
+      "path": "./nchs-drug-poisoning-mortality-by-state-united-states.csv", 
+      "description": "### Content  \n\nThis dataset describes drug poisoning deaths at the U.S. and state level by selected demographic characteristics, and includes age-adjusted death rates for drug poisoning from 1999 to 2015.\r\n\r\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD\u201310). Drug-poisoning deaths are defined as having ICD\u201310 underlying cause-of-death codes X40\u2013X44 (unintentional), X60\u2013X64 (suicide), X85 (homicide), or Y10\u2013Y14 (undetermined intent).\r\n\r\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011\u20132015 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\r\n\r\nEstimate does not meet standards of reliability or precision. Death rates are flagged as \u201cUnreliable\u201d in the chart when the rate is calculated with a numerator of 20 or less.\r\n\r\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD\u201310 codes for unintentional poisoning as R99, \u201cOther ill-defined and unspecified causes of mortality\u201d (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Estimates should be interpreted with caution.\r\n\r\nSmoothed county age-adjusted death rates (deaths per 100,000 population) were obtained according to methods described elsewhere (3\u20135). Briefly, two-stage hierarchical models were used to generate empirical Bayes estimates of county age-adjusted death rates due to drug poisoning for each year during 1999\u20132015. These annual county-level estimates \u201cborrow strength\u201d across counties to generate stable estimates of death rates where data are sparse due to small population size (3,5). Estimates are unavailable for Broomfield County, Colo., and Denali County, Alaska, before 2003 (6,7). Additionally, Bedford City, Virginia was added to Bedford County in 2015 and no longer appears in the mortality file in 2015. County boundaries are consistent with the vintage 2005-2007 bridged-race population file geographies (6).  \n\n", 
+      "schema": {
+        "fields": [
+          {
+            "type": "Numeric", 
+            "name": "Year", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Sex", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Age", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Race and Hispanic Origin", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "State", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Deaths", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Population", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Crude Death Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Standard Error for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Low Confidence Limit for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Upper Confidence Limit for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Standard Error Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Lower Confidence Limit for Age-adjusted rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Upper Confidence Limit for Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "State Crude Rate in Range", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "US Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "US Age-adjusted Rate", 
+            "title": null
+          }
+        ]
+      }
+    }, 
+    {
+      "path": "./nchs-drug-poisoning-mortality-by-state-united-states_1csv", 
+      "description": "### Content  \n\nThis dataset describes drug poisoning deaths at the U.S. and state level by selected demographic characteristics, and includes age-adjusted death rates for drug poisoning. \r\n\r\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD\u201310). Drug-poisoning deaths are defined as having ICD\u201310 underlying cause-of-death codes X40\u2013X44 (unintentional), X60\u2013X64 (suicide), X85 (homicide), or Y10\u2013Y14 (undetermined intent).\r\n\r\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011\u20132016 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\r\n\r\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD\u201310 codes for unintentional poisoning as R99, \u201cOther ill-defined and unspecified causes of mortality\u201d (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Drug poisoning death rates may be underestimated in those instances.\r\n\r\nREFERENCES\r\n1. National Center for Health Statistics. National Vital Statistics System: Mortality data. Available from: http://www.cdc.gov/nchs/deaths.htm.\r\n\r\n2. CDC. CDC Wonder: Underlying cause of death 1999\u20132016. Available from: http://wonder.cdc.gov/wonder/help/ucd.html.  \n\n", 
+      "schema": {
+        "fields": [
+          {
+            "type": "String", 
+            "name": "State", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Year", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Sex", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Age Group", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Race and Hispanic Origin", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Deaths", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Population", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Crude Death Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Standard Error for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Lower Confidence Limit for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Upper Confidence Limit for Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Standard Error for Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Lower Confidence Limit for Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "Upper Confidence Limit for Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "State Crude Rate in Range", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "US Crude Rate", 
+            "title": null
+          }, 
+          {
+            "type": "Numeric", 
+            "name": "US Age-adjusted Rate", 
+            "title": null
+          }, 
+          {
+            "type": "String", 
+            "name": "Unit", 
+            "title": null
+          }
+        ]
+      }
+    }, 
+    {
+      "path": "./socrata_metadata_nchs-drug-poisoning-mortality-by-county-united-states.json", 
+      "description": "Socrata metadata for file in title", 
+      "schema": {
+        "fields": []
+      }
+    }, 
+    {
+      "path": "./socrata_metadata_nchs-drug-poisoning-mortality-by-county-united-states_1json", 
+      "description": "Socrata metadata for file in title", 
+      "schema": {
+        "fields": []
+      }
+    }, 
+    {
+      "path": "./socrata_metadata_nchs-drug-poisoning-mortality-by-state-united-states.json", 
+      "description": "Socrata metadata for file in title", 
+      "schema": {
+        "fields": []
+      }
+    }, 
+    {
+      "path": "./socrata_metadata_nchs-drug-poisoning-mortality-by-state-united-states_1json", 
+      "description": "Socrata metadata for file in title", 
+      "schema": {
+        "fields": []
+      }
+    }
+  ]
+}
